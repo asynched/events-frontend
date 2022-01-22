@@ -9,7 +9,7 @@ import { MenuIcon } from '@heroicons/react/outline'
 
 export default function Header() {
   const { data } = useQuery(ALL_STAGES)
-  const [menu, , toggleMenu] = useToggle(true)
+  const [menu, , toggleMenu] = useToggle(false)
 
   return (
     <>
