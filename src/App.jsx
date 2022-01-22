@@ -1,6 +1,12 @@
 import React from 'react'
+
+import GraphQLProvider from '@/services/graphql/GraphQLProvider'
 import Router from '@/routes'
 
 export default function App() {
-  return <Router />
+  return (
+    <GraphQLProvider>
+      <Router />
+    </GraphQLProvider>
+  )
 }
